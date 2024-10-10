@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kb.loan.mapper.LoanMapper">
+
+    <!-- Fetch all loans -->
+    <select id="getLoanList" resultType="com.kb.loan.dto.LoanDTO">
+        SELECT lno, bank, url, title, subtitle, content, period, howToRepay, loanLimit, interest, loanGuide, lan
+        FROM Loan
+    </select>
+
+    <!-- Fetch loan detail by lno -->
+    <select id="getLoanDetail" parameterType="Long" resultType="com.kb.loan.dto.LoanDTO">
+        SELECT lno, bank, url, title, subtitle, content, period, howToRepay, loanLimit, interest, loanGuide, lan
+        FROM Loan
+        WHERE lno = #{lno}
+    </select>
+
+</mapper>
+
+
