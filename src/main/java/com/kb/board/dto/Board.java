@@ -26,6 +26,8 @@ public class Board {
     private Date createDate;
     private Date modifyDate;
 
+    private int emergency;
+
     private ArrayList<BoardReply> replyList;
     private ArrayList<BoardAttachFile> boardAttachFileList;
 }

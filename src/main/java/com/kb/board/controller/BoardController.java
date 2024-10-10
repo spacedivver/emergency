@@ -23,8 +23,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/board")
 @RequiredArgsConstructor
-@Slf4j
-@Api(value = "BoardController", tags = "게시판 정보")
 @PropertySource({"classpath:/application.properties"})
 public class BoardController {
 
