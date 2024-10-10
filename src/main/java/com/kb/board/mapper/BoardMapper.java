@@ -21,4 +21,7 @@ public interface BoardMapper {
     BoardReply selectReplyByRno(long rno);
     List<BoardReply> selectReplyByBno(long bno);
     int deleteReply(long rno);
+
+
+//    String test(long uno);
 }

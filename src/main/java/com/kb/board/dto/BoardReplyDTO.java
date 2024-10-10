@@ -14,6 +14,8 @@ public class BoardReplyDTO {
 	private String writer;
 	private String content;
 
+	private String mammamamama;
+
 	public BoardReply toReply(){
 		return BoardReply.builder().bno(bno).memberId(writer).content(content).build();
 	}
